@@ -1,0 +1,212 @@
+.projects {
+  position: relative;
+
+  @media (min-width: 1200px) {
+    height: 800px;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 50px 0;
+
+    @media (min-width: 576px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .cards__container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    column-gap: 0.5rem;
+    row-gap: 2rem;
+    place-items: center;
+    position: relative;
+
+    @media (min-width: 768px) {
+      column-gap: 1.5rem;
+    }
+
+    @media (min-width: 992px) {
+      column-gap: 2rem;
+    }
+  }
+
+  .cards {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+      &:hover .card {
+        transform: rotateX(180deg) rotateY(360deg) rotateZ(180deg);
+
+        .card__face__front {
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+        }
+      }
+    }
+
+    .card {
+      height: inherit;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+      will-change: transform;
+
+      &.active {
+        transform: rotateX(180deg) rotateY(360deg) rotateZ(180deg);
+
+        .card__face__front {
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+        }
+      }
+    }
+
+    .card__face__back,
+    .card__face__front {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .card__face__back {
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        transform: skew(2deg, 2deg);
+        z-index: -1;
+      }
+
+      &:nth-child(1)::before {
+        background: linear-gradient(
+          315deg,
+          var(--colorTertiary),
+          var(--colorQuarter)
+        );
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: rgb(255, 255, 255, 0.05);
+        pointer-events: none;
+      }
+
+      .face__back-content {
+        height: 100%;
+        background: var(--colorSecondary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          position: absolute;
+          top: 0;
+          right: 20px;
+          font-size: 10em;
+          color: rgb(255, 255, 255, 0.05);
+          transition: 0.8s;
+        }
+
+        @media (min-width: 992px) {
+          &:hover {
+            h2 {
+              top: -35px;
+            }
+          }
+        }
+
+        @media (min-width: 1200px) {
+          &:hover {
+            h2 {
+              top: -80px;
+            }
+          }
+        }
+
+        h3 {
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          color: var(--colorQuarter);
+          font-size: 1.5rem;
+        }
+
+        p {
+          padding: 0 20px;
+          color: $colorWhite;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          line-height: 2rem;
+          margin-bottom: 20px;
+        }
+
+        a {
+          visibility: hidden;
+          color: var(--colorQuarter);
+
+          @media (min-width: 992px) {
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    .card__face__front {
+      .face__front-img {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .card__footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+
+      input,
+      a {
+        width: 130px;
+        height: 35px;
+        background-color: var(--colorSecondary);
+        border: 2px solid var(--colorQuarter);
+        color: var(--colorQuarter);
+        font-family: "Lato";
+        letter-spacing: 1.5px;
+        border-radius: 5px;
+      }
+
+      a {
+        text-align: center;
+        padding: 7px;
+        font-size: 0.9rem;
+      }
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}

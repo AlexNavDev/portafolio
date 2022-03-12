@@ -1,0 +1,54 @@
+footer {
+  height: 80px;
+  position: relative;
+
+  .contacto {
+    ul {
+      height: 60px;
+      background-color: var(--colorTertiary);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 40px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        @media (min-width: 768px) {
+          &:hover {
+            background-color: $colorWhite;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .author {
+    p {
+      text-align: center;
+      color: $colorWhite;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .chat {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 4;
+
+    input {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      background-color: var(--colorPrimary);
+      border: transparent;
+      box-shadow: 0px 0px 15px var(--colorQuarter);
+      border-radius: 50%;
+      font-size: 2rem;
+    }
+  }
+}

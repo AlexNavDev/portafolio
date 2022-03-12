@@ -1,0 +1,30 @@
+html {
+  --colorPrimary: #1e1f26;
+  --colorSecondary: #283655;
+  --colorTertiary: #4d648d;
+  --colorQuarter: #d0e1f9;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  transition: 0.5s ease-in-out;
+}
+
+html[data-theme="segundo"] {
+  --colorPrimary: #04202c;
+  --colorSecondary: #304040;
+  --colorTertiary: #5b7065;
+  --colorQuarter: #c9d1c8;
+}
+
+html[data-theme="tercero"] {
+  --colorPrimary: #16253d;
+  --colorSecondary: #002c54;
+  --colorTertiary: #efb509;
+  --colorQuarter: #cd7213;
+}
+
+$colorWhite: #fff;
+
+root {
+  --x: 0;
+  --y: 0;
+}

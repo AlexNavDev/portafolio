@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="primero">
+<link rel="shortcut icon" href="#" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icons/avatar.svg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h2><span>
+                        « </span> <a href="#">Alejandro</a> <span> / »</span>
+                </h2>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#aboutMe" class="">Sobre mí</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Proyectos </a></li>
+                    <li class="theme"><a href="#">Color de Tema</a></li>
+                    <li><a href="#" class="contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </header>
+
+        <main>
+            <section class="aboutMe" id="aboutMe">
+                <h2>«¡Hola mundo!»</h2>
+
+                <div class="information">
+                    <div class="shadow">
+                        <div class="photo">
+                            <img src="./assets/img/photo.png" alt="foto-alejandro">
+                        </div>
+                    </div>
+
+                    <div class="information__text" style="--x: 0; --y: 0">
+                        <p>Mi nombre es <span class="neon">Alejandro Navarro.</span></p>
+
+                        <p> <span>Front-end Developer.</span></p>
+
+                        <p>Me considero una persona autodidacta, con gusto por la tecnología, programación y el
+                            diseño web. En
+                            estos momentos sumergiendome en el fascinante
+                            mundo de JavaScript. </p>
+                    </div>
+
+                    <div class="hero">
+                        <img src="./assets/img/background/designer.svg" alt="imagen-fondo">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="skills" id="skills">
+                <div class="custom-shape-divider-top-1624154980">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+                <h2> Skills </h2>
+
+                <div class="skill__grid">
+                    <div class="skill__image">
+                        <img src="./assets/img/background/skill.svg" alt="imagen-skill">
+                    </div>
+                    <div class="skill__card">
+                        <h3>HTML5</h3>
+                        <div title="Lenguaje de marcas de hipertexto">
+                            <img src="./assets/img/logos/html.svg" alt="logo-HTML5">
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3>Css 3</h3>
+                        <div title="Hoja de estilo en cascada">
+                            <img src="./assets/img/logos/css.svg" alt="logo-Css3">
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3>Sass</h3>
+                        <div title="Lenguaje de hoja de estilos en cascada">
+                            <img src="./assets/img/logos/sass.svg" alt="logo-Sass">
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3>JavaScript</h3>
+                        <div title="Lenguaje de programación interpretado">
+                            <img src="./assets/img/logos/javascript.svg" alt="logo-Javascript">
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3>Git</h3>
+                        <div title="Software de control de versiones">
+                            <img src="./assets/img/logos/git.svg" alt="logo-Git">
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3>Aprendiendo</h3>
+                <div class="skill__learning">
+
+                    <div class="skill__card">
+                        <h3>React</h3>
+                        <div title="Librería Javascript focalizada en el desarrollo de interfaces de usuario">
+                            <img src="./assets/img/logos/react.svg" alt="logo-React">
+                        </div>
+                    </div>
+
+                    <div class="skill__card">
+                        <h3>Node</h3>
+                        <div title="Entorno de tiempo de ejecución de JavaScript">
+                            <img src="./assets/img/logos/node.svg" alt="logo-Node">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="projects" id="projects">
+                <div class="custom-shape-divider-top-1624154980">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+                <div class="error"></div>
+                <h2>Proyectos</h2>
+
+                <div class="cards__container">
+                    <template id="project__template">
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card__face__back">
+                                    <div class="face__back-content">
+                                        <h2></h2>
+                                        <h3></h3>
+                                        <p>
+                                        </p>
+                                        <a href="" target="_blank">Ver página</a>
+                                    </div>
+                                </div>
+
+                                <div class="card__face__front">
+                                    <div class="face__front-img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card__footer">
+                                <input type="button" value="Descripción" id="seeMore">
+                                <a href="" target="_blank">Ver página</a>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="contacto">
+                <div class="redes">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/alejandro-navarro-0ab254218/" target="_blank"><img
+                                    src="./assets/img/logos/linkedin.svg" alt="logo-linkedin"></a></li>
+                        <li><a href="https://github.com/AlexNavDev" target="_blank"><img
+                                    src="./assets/img/logos/github.svg" alt="logo-github"></a></li>
+                        <li><a href="https://twitter.com/AlexNavDev" target="_blank"><img
+                                    src="./assets/img/logos/twitter.svg" alt="logo-twitter"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="author">
+                <p>Creado por Alejandro Navarro.</p>
+            </div>
+
+            <div class="chat">
+                <input type="button" value="🗨️" id="chat__btn">
+            </div>
+
+        </footer>
+
+
+        <div class="chat__container hidden">
+            <div class="chat__header">
+                <p class="chat__close">❌</p>
+                <p>Hola, Buenas tardes.</p>
+            </div>
+
+            <div class="chat__body">
+                <div class="chat__body--text">
+                    <p>Soy Alex bot 🤖</p>
+                    <p>Espero y estes teniendo un buen día. </p>
+                    <p>En que puedo ayudarte </p>
+                </div>
+
+                <div class="chat__body--info">
+                    <div class="response"></div>
+                    <div class="inputs">
+                        <input type="button" value="Ver mi email" class="email">
+                        <input type="button" value="Ver mis sociales" class="social">
+                        <input type="button" value="Ver mi CV" class="cv">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js" type="module"></script>
+
+</body>
+
+</html>

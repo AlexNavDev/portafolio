@@ -1,0 +1,29 @@
+{
+    "projects": [
+         {
+            "idProject" : "01",
+            "name": "Marketoons",
+            "info": "Esta página es responsiva (se adapta a tablets y móviles cuenta con un formulario con validación en todos sus campos. <br> Esta diseñada con HTML5, Css3 y JavaScript.",
+            "img": "./assets/img/img_projects/project01.gif",
+            "url": "https://alexnavdev.github.io/marke/"
+        },
+
+        {
+            "idProject" : "02",
+            "name": "Weather",
+            "info": "Esta página fue diseñada en Mobile First, se consumen los datos desde la página web \"https://openweathermap.org\" en su version gratuita. <br> Esta diseñada con HTML5, Css3, Sass y JavaScript. </Esta>",
+            "img": "./assets/img/img_projects/project02.gif",
+            "url": "https://alexnavdev.github.io/weather/"
+        },
+
+        {
+            "idProject" : "03",
+            "name": "Meal",
+            "info": "Esta página fue diseñada en Mobile First, se consumen los datos desde la página web \"https://themealdb.com\" en su versión gratuita <br> Esta diseñada con HTML5, Css3, Sass y JavaScript.",
+            "img": "./assets/img/img_projects/project03.gif",
+            "url": "https://alexnavdev.github.io/meal/"
+        }
+
+    ]
+}
+

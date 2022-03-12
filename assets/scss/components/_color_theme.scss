@@ -1,0 +1,48 @@
+.container__theme {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in;
+
+  .body__theme {
+    width: 80vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+
+    @media (min-width: 576px) {
+      height: 35vh;
+      font-size: 1.3rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 70vh;
+      height: 25vh;
+      font-size: 1.3rem;
+    }
+
+    & > * {
+      margin: 10px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--colorQuarter);
+    }
+
+    .radio {
+      width: 80%;
+      height: 30px;
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+      color: var(--colorQuarter);
+    }
+  }
+}

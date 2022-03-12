@@ -1,0 +1,192 @@
+.aboutMe {
+  height: 680px;
+  text-align: center;
+  position: relative;
+
+  .hero {
+    display: none;
+  }
+
+  @media (min-width: 576px) {
+    height: auto;
+
+    .hero {
+      display: block;
+      animation: hero 1s;
+
+      @keyframes hero {
+        from {
+          transform: translateX(100%);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    height: 800px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
+
+  h2 {
+    position: relative;
+    animation: title 1s;
+
+    @keyframes title {
+      from {
+        transform: translateY(-100%);
+      }
+    }
+
+    @media (min-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+
+  .information > * {
+    margin-bottom: 10px;
+    //position: relative;
+    font-family: "Lato";
+  }
+}
+
+.information {
+  @media (min-width: 992px) {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .hero {
+      display: flex;
+      grid-column: 2;
+      grid-row: 1/3;
+
+      img {
+        width: 90%;
+        margin: auto;
+
+        &:hover {
+          animation: shein 1.8s linear infinite;
+
+          @keyframes shein {
+            to {
+              filter: drop-shadow(0 0 10px var(--colorQuarter));
+            }
+            from {
+              filter: drop-shadow(0 0 20px var(--colorQuarter));
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .shadow {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px var(--colorQuarter));
+
+    @media (min-width: 992px) {
+      filter: drop-shadow(0 0 25px var(--colorQuarter));
+    }
+
+    .photo {
+      width: 270px;
+      height: 250px;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      background: var(--colorPrimary);
+      margin: auto;
+
+      animation: photo 1s;
+
+      @keyframes photo {
+        from {
+          transform: translateX(-100%);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .information__text {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: $colorWhite;
+    line-height: 2rem;
+    letter-spacing: 1.3px;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: relative;
+    animation: text 1s;
+
+    @keyframes text {
+      from {
+        transform: translateY(100%);
+      }
+    }
+
+    @media (min-width: 576px) {
+      width: 80%;
+      padding: 30px;
+    }
+
+    @media (min-width: 992px) {
+      width: 90%;
+      height: 350px;
+      font-size: 1.1rem;
+      padding: 40px 40px;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(
+        circle at var(--x) var(--y),
+        var(--colorTertiary) 0%,
+        rgba(0, 0, 0, 0.4) 50%
+      );
+
+      p {
+        pointer-events: none;
+      }
+    }
+
+    @media (min-width: 1220px) {
+      height: 100%;
+    }
+  }
+
+  .neon {
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    color: $colorWhite;
+    text-shadow: 0 0 8px #00b7ff, 0 0 2px #00b7ff, 0 0 10px #00b7ff,
+      0 0 6px #00b7ff, 0 0 20px #00b7ff, 0 0 20px #00b7ff, 0 0 1px #00b7ff,
+      0 0 12px #00b7ff;
+
+    @media (min-width: 992px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  span {
+    color: $colorWhite;
+    text-shadow: 0 0 8px var(--colorQuarter), 0 0 2px var(--colorQuarter),
+      0 0 10px var(--colorQuarter), 0 0 6px var(--colorQuarter),
+      0 0 20px var(--colorQuarter), 0 0 20px var(--colorQuarter),
+      0 0 1px var(--colorQuarter), 0 0 12px var(--colorQuarter);
+
+    @media (min-width: 992px) {
+      font-size: 1.2rem;
+    }
+  }
+}
