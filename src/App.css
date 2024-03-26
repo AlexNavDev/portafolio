@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  background-image: radial-gradient(circle, #09101a 14%, #374357 95%);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
