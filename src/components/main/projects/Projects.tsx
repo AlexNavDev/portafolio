@@ -24,14 +24,16 @@ const Projects = () => {
       <StyledContainerButtons>
         <button
           className={`${isVisibleProject === "react" ? "active-button" : ""}`}
-          onClick={() => setIsVisibleProject("react")}>
+          onClick={() => setIsVisibleProject("react")}
+          aria-label="Mostrar proyectos en React">
           <span>React</span>
         </button>
         <button
           className={`${
             isVisibleProject === "typescript" ? "active-button" : ""
           }`}
-          onClick={() => setIsVisibleProject("typescript")}>
+          onClick={() => setIsVisibleProject("typescript")}
+          aria-label="Mostrar proyectos en Typescript">
           <span>Typescript</span>
         </button>
       </StyledContainerButtons>

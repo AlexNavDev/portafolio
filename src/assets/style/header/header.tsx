@@ -12,7 +12,7 @@ export const StyledHeader = styled.header<{ $toggle: boolean }>`
   align-items: center;
   position: fixed;
   z-index: 5;
-  transition: background 0.7s ease;
+  transition: background 0.5s ease;
 
   @media (width >= 1024px) {
     width: 20%;
@@ -62,8 +62,8 @@ export const StyledHeader = styled.header<{ $toggle: boolean }>`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(9, 16, 26, 0.7);
-    backdrop-filter: blur(10px);
+    background-color: rgba(9, 16, 26, 0.8);
+    backdrop-filter: blur(15px);
 
     @media (width >= 1024px) {
       height: 100vh;

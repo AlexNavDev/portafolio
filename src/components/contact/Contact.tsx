@@ -14,28 +14,34 @@ interface Props {
 const Contact = ({ handleVisibleEmail, isVisibleEmail }: Props) => {
   return (
     <StyledContainerContact>
-      <figure>
-        <a href="https://github.com/AlexNavDev" target="_blank">
+      <figure title="Github">
+        <a
+          href="https://github.com/AlexNavDev"
+          target="_blank"
+          rel="noreferrer">
           <FaGithub />
         </a>
       </figure>
 
-      <figure>
+      <figure title="Linkedin">
         <a
           href="https://www.linkedin.com/in/alejandro-navarro-dev/"
-          target="_blank">
+          target="_blank"
+          rel="noreferrer">
           <FaLinkedin />
         </a>
       </figure>
 
-      <figure>
-        <button onClick={handleVisibleEmail}>
+      <figure title="Correo electrónico">
+        <button
+          onClick={handleVisibleEmail}
+          aria-label="Mostrar dirección de correo electrónico">
           <MdEmail />
         </button>
       </figure>
 
-      <figure>
-        <a href={Pdf} target="_blank">
+      <figure title="Curriculum Vitae">
+        <a href={Pdf} target="_blank" rel="noreferrer">
           <img src={IconCV} alt="logo CV" loading="lazy" />
         </a>
       </figure>

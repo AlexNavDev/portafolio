@@ -18,7 +18,7 @@ const useGetDay = () => {
         setGetDay({
           ...getDay,
           day: currentDay,
-          message: "Buenos dias, espero estés teniendo un buen",
+          message: "Buenos días, espero estés teniendo un buen",
         });
       }
 

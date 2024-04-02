@@ -37,7 +37,9 @@ const Home = () => {
                 <img src={Foto} alt="Foto Alejandro" />
               </figure>
             </div>
-            <button onClick={() => handleGetName("projects")}>
+            <button
+              aria-label=" Haz clic para ver los proyectos disponibles."
+              onClick={() => handleGetName("projects")}>
               <p
                 className={`icon ${
                   currentElementId == "section-projects" ? "active" : ""

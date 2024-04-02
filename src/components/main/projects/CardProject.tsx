@@ -52,8 +52,12 @@ const CardProject = (props: Props) => {
           </div>
         </div>
         <div className="flip-card-footer">
-          <button onClick={() => handleHover(idProject)}>Descripción</button>
-          <a href={url} target="_blank">
+          <button
+            aria-label="Mostrar descripción del proyecto"
+            onClick={() => handleHover(idProject)}>
+            Descripción
+          </button>
+          <a href={url} target="_blank" rel="noreferrer">
             Ver página
           </a>
         </div>
